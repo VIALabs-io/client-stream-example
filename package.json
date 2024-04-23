@@ -1,0 +1,28 @@
+{
+	"name": "client-stream-example",
+	"version": "0.1.0",
+	"description": "Validator network data client streaming example",
+	"main": "src/index.ts",
+	"repository": "https://github.com/vialabs-io/client-stream-example",
+	"author": "Atlas",
+	"license": "Commercial",
+	"type": "module",
+	"private": true,
+	"scripts": {
+		"clean": "rimraf dist",
+		"build": "npm run clean && tsc",
+		"prepublishOnly": "npm run build",
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"prepare": "npm run build"
+	},
+	"dependencies": {
+		"@vialabs-io/node-core": "https://github.com/vialabs-io/node-core",
+		"rimraf": "^3.0.2",
+		"tsx": "^4.7.0"
+	},
+	"devDependencies": {
+		"@types/node": "^20.12.7",
+		"ts-node": "^10.9.2",
+		"typescript": "^5.4.5"
+	}
+}
